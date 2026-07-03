@@ -1,0 +1,140 @@
+/* style.css */
+:root {
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --accent: #38bdf8;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', system_ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #9e9d9d 0%, #f1f1f1 100%);
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border: 8px solid rgba(255,255,255,0.15);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+}
+
+.profile-glow {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background: radial-gradient(circle, rgba(37,99,235,0.4) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+.typing-container {
+    font-size: 1.5rem;
+    min-height: 60px;
+}
+
+.cursor {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.service-card {
+    background: white;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(37,99,235,0.15);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.portfolio-grid .card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #020617;
+    color: #e2e8f0;
+}
+
+.dark-mode .bg-light {
+    background-color: #1e2937 !important;
+}
+
+/* Additional premium styles */
+.floating-badge {
+    position: absolute;
+    z-index: 10;
+    font-size: 0.9rem;
+}

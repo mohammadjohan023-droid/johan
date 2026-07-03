@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammad Johan - Cybersecurity Professional & Full Stack Developer">
+    <title>Mohammad Johan | Cybersecurity & Full Stack Developer</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="profile.jpeg" type="image/jpeg">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Mohammad Johan<span class="text-primary"> </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3 ms-4">
+                    <button id="theme-toggle" class="btn btn-outline-primary rounded-pill">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="display-2 fw-bold mb-3">Hi, I'm <span class="gradient-text">Mohammad Johan</span></h1>
+                        
+                        <div class="typing-container mb-4">
+                            <span id="typed-text" class="typed-text"></span>
+                            <span class="cursor">|</span>
+                        </div>
+                        <h5 class="text-dark mb-3 fw-medium">CYBERSECURITY EXPERT &amp; FULL STACK DEVELOPER</h5>
+                        <p class="lead text-muted mb-5">Building secure, scalable digital experiences with modern technologies. Passionate about protecting systems and crafting elegant solutions.</p>
+                        
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#" onclick="downloadResume()" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                                <i class="fas fa-download me-2"></i> Download Resume
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill">
+                                Hire Me
+                            </a>
+                        </div>
+                        
+                        <div class="social-icons mt-5">
+                            <a href="https://www.linkedin.com/in/mohammad-johan-66289a3a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/mohammadjohan25" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me//+8801334026254" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://youtube.com/@mohammad_johan?si=sg1CSHqOW1HaQbEW" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 text-center position-relative" data-aos="fade-left">
+                    <div class="profile-image-container">
+                        <div class="profile-glow"></div>
+                        <img src="profile.jpeg" alt="Mohammad Johan" class="profile-img img-fluid rounded-4 shadow-lg">
+                    </div>
+                    
+                    <!-- Floating badges -->
+                    <div class="floating-badge top-0 start-0 bg-dark text-white p-3 rounded-3 shadow" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fas fa-shield-alt text-success"></i>
+                        <div class="small">CISSP Certified</div>
+                    </div>
+                    <div class="floating-badge bottom-0 end-0 bg-primary text-white p-3 rounded-3 shadow" data-aos="zoom-in" data-aos-delay="600">
+                        <i class="fas fa-code"></i>
+                        <div class="small">10+ Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated background particles -->
+        <div id="particles-js" class="particles-bg"></div>
+        
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">Hi, I Am Mohammad Johan With over 3 years of experience in cybersecurity and full-stack development, I specialize in building secure, high-performance web applications and implementing robust security architectures.</p>
+                    <p>I bridge the gap between offensive security and software engineering, helping organizations protect their digital assets while delivering exceptional user experiences.</p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-sm-6 mb-4">
+                            <div class="info-card">
+                                <strong>Based in</strong>
+                                <span>Rangpur, Bangladesh</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="info-card">
+                                <strong>Email</strong>
+                                <span>mohammadjohan025@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="info-card">
+                                <strong>Phone</strong>
+                                <span>+8801334026254</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <div class="info-card">
+                                <strong>Availability</strong>
+                                <span>Open for Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="mb-4">Quick Facts</h4>
+                    <ul class="list-unstyled about-list">
+                        <li><i class="fas fa-check text-primary"></i> Ethical Hacker &amp; Penetration Tester</li>
+                        <li><i class="fas fa-check text-primary"></i> Full Stack Architect</li>
+                        <li><i class="fas fa-check text-primary"></i> Cloud Security Specialist (AWS, Azure)</li>
+                        <li><i class="fas fa-check text-primary"></i> Speaker at multiple security conferences</li>
+                    </ul>
+                    
+                    <div class="mt-5">
+                        <h5 class="mb-3">Experience Highlights</h5>
+                        <div class="d-flex gap-4">
+                            <div>
+                                <div class="fw-bold">Senior Security Engineer</div>
+                                <div class="text-muted">TechCorp • 2023 - Present</div>
+                            </div>
+                            <div>
+                                <div class="fw-bold">Full Stack Lead</div>
+                                <div class="text-muted">InnovateLabs • 2021 - 2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Technical Skills -->
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h4 class="mb-4">Technical Expertise</h4>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>HTML / CSS / JS</span><span>95%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:95%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>React / Next.js</span><span>90%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>Node.js / Express</span><span>88%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:88%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>MongoDB / PostgreSQL</span><span>85%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:85%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>Python &amp; Cybersecurity Tools</span><span>92%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:92%"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="d-flex justify-content-between mb-1"><span>AWS / Docker / Kubernetes</span><span>80%</span></div>
+                        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+                    <h4 class="mb-4">Professional Skills</h4>
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="soft-skill-card">
+                                <i class="fas fa-brain"></i>
+                                <div>Problem Solving</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="soft-skill-card">
+                                <i class="fas fa-comments"></i>
+                                <div>Communication</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="soft-skill-card">
+                                <i class="fas fa-users"></i>
+                                <div>Leadership</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="soft-skill-card">
+                                <i class="fas fa-lightbulb"></i>
+                                <div>Critical Thinking</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Services I Offer</h2>
+                <p class="text-muted">Comprehensive solutions from concept to secure deployment</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h4>Web Application Security</h4>
+                        <p>Penetration testing, vulnerability assessment, and secure architecture design.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h4>Full Stack Development</h4>
+                        <p>Modern web applications using React, Node.js, and cloud-native technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                        <h4>Cloud Security</h4>
+                        <p>AWS, Azure, and multi-cloud security posture management and compliance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+            </div>
+            
+            <div class="row g-4 portfolio-grid" id="portfolio-grid">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h4>Senior Cybersecurity Engineer</h4>
+                        <h6>TechCorp Solutions</h6>
+                        <p>Lead security architecture for enterprise clients. Implemented zero-trust frameworks and conducted red team exercises.</p>
+                    </div>
+                </div>
+                <!-- More items... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <form id="contact-form" class="mt-4">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" rows="6" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg px-5">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="mb-5">
+                            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                            <h5>mohammadjohan025@gmail.com</h5>
+                        </div>
+                        <div class="mb-5">
+                            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                            <h5>+8801334026254</h5>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                            <h5>Rangpur, Bangladesh</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-light">
+        <div class="container">
+            <div class="text-center">
+                <p>&copy; 2026 Mohammad Johan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
